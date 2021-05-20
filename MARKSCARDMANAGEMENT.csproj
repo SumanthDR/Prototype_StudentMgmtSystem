@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{14A5CD5B-07BF-4D9C-9CB1-661DB1224970}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MARKSCARDMANAGEMENT</RootNamespace>
+    <AssemblyName>MARKSCARDMANAGEMENT</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="Frm_Author.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Author.Designer.cs">
+      <DependentUpon>Frm_Author.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Course.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Course.Designer.cs">
+      <DependentUpon>Frm_Course.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CourseView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CourseView.Designer.cs">
+      <DependentUpon>Frm_CourseView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_CrsMgmt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_CrsMgmt.Designer.cs">
+      <DependentUpon>Frm_CrsMgmt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Help.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Help.Designer.cs">
+      <DependentUpon>Frm_Help.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Home.Designer.cs">
+      <DependentUpon>Frm_Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MapUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MapUpdate.Designer.cs">
+      <DependentUpon>Frm_MapUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MarksCard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MarksCard.Designer.cs">
+      <DependentUpon>Frm_MarksCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MarksCardView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_MarksCardView.Designer.cs">
+      <DependentUpon>Frm_MarksCardView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_StuView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_StuView.Designer.cs">
+      <DependentUpon>Frm_StuView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Stu_Application.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Stu_Application.Designer.cs">
+      <DependentUpon>Frm_Stu_Application.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Subject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Subject.Designer.cs">
+      <DependentUpon>Frm_Subject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SubView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SubView.Designer.cs">
+      <DependentUpon>Frm_SubView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_Author.resx">
+      <DependentUpon>Frm_Author.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Course.resx">
+      <DependentUpon>Frm_Course.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CourseView.resx">
+      <DependentUpon>Frm_CourseView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_CrsMgmt.resx">
+      <DependentUpon>Frm_CrsMgmt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Help.resx">
+      <DependentUpon>Frm_Help.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Home.resx">
+      <DependentUpon>Frm_Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Login.resx">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MapUpdate.resx">
+      <DependentUpon>Frm_MapUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MarksCard.resx">
+      <DependentUpon>Frm_MarksCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MarksCardView.resx">
+      <DependentUpon>Frm_MarksCardView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_StuView.resx">
+      <DependentUpon>Frm_StuView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Stu_Application.resx">
+      <DependentUpon>Frm_Stu_Application.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Subject.resx">
+      <DependentUpon>Frm_Subject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SubView.resx">
+      <DependentUpon>Frm_SubView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mks_icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
